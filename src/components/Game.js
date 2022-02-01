@@ -1,3 +1,4 @@
+import Dice from "./game/Dice";
 import Main from "./Main";
 
 const Game = () => {
@@ -38,11 +39,8 @@ const Game = () => {
                     </div>
                 </div>
             </section>
-            <section>
-                <button>Dado</button>
-            </section>
+            <Dice />
         </Main>
-
     )
 }
 export default Game;
