@@ -1,8 +1,13 @@
+import Main from "./Main";
+
 const Game = () => {
     return (
-        <div>
-            Juego
-        </div>
+        <Main>
+            <div>
+                Juego
+            </div>
+        </Main>
+
     )
 }
 export default Game;
