@@ -1,6 +1,8 @@
 import Dice from "./game/Dice";
 import Main from "./Main";
 
+import styles from '../styles/game/Game.module.scss';
+
 const Game = () => {
     return (
         <Main>
@@ -15,27 +17,15 @@ const Game = () => {
                 <div>[]</div>
                 <div>[]</div>
                 <div>[]</div>
-                <div>
-                    Armario
-                    <div>Recipiente
+                <div className={styles.merch_cupboard}>
+                    <div className={styles.merch_item1}>
                         Caja de galletas x 3
-                        {/* <div>Caja de galletas</div>
-                        <div>Caja de galletas</div>
-                        <div>Caja de galletas</div> */}
                     </div>
-                    <div>
-                        Recipiente
+                    <div className={styles.merch_item2}>
                         Rana x 3
-                        {/* <div>Rana</div>
-                        <div>Rana</div>
-                        <div>Rana</div> */}
                     </div>
-                    <div>
-                        Recipiente
+                    <div className={styles.merch_item3}>
                         Huevo de rana x 3
-                        {/* <div>Huevo de rana</div>
-                        <div>Huevo de rana</div>
-                        <div>Huevo de rana</div> */}
                     </div>
                 </div>
             </section>
