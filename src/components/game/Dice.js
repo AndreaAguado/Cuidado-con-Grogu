@@ -27,9 +27,9 @@ const Dice = () => {
 
 
     return (
-        <section>
+        <section className={styles.dice_section}>
             <p className={styles.play_move}>{diceValue}</p>
-            <button onClick={handleDice}>Lanzar el dado</button>
+            <button className={styles.button} onClick={handleDice}>Lanzar el dado</button>
         </section>
     )
 }
