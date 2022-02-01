@@ -5,6 +5,7 @@ import Rules from './Rules';
 
 import { Routes, Route } from 'react-router-dom';
 import { Link } from 'react-router-dom';
+import Intro from './Intro';
 
 function App() {
   return (
@@ -26,11 +27,10 @@ function App() {
         </nav>
       </header>
       <Routes>
-        {/* <Route path="/" element={<div>Hola</div>}> */}
+        <Route path="/" element={<Intro />} />
         <Route path="/rules" element={<Rules />} />
         <Route path="/game" element={<Game />} />
         <Route path="/pieces" element={<Pieces />} />
-        {/* </Route> */}
       </Routes>
     </div>
   );
