@@ -4,6 +4,9 @@ import Main from "./Main";
 import styles from '../styles/game/Game.module.scss';
 
 const Game = () => {
+    const handleDiceValue = (diceValue) => {
+        console.log(diceValue);
+    }
     return (
         <Main>
             <div>
@@ -29,7 +32,7 @@ const Game = () => {
                     </div>
                 </div>
             </section>
-            <Dice />
+            <Dice handleDiceValue={handleDiceValue} />
         </Main>
     )
 }
