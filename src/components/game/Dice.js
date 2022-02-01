@@ -3,22 +3,25 @@ import { useState } from "react";
 import styles from '../../styles/game/Dice.module.scss';
 
 const Dice = () => {
-    const [diceValue, setDiceValue] = useState('');
+    const [diceValue, setDiceValue] = useState({
+        numValue: "",
+        playValue: ""
+    });
 
     const handleDice = () => {
         let diceRoll = rollTheDice(4, 1);
         console.log(diceRoll);
         if (diceRoll === 1) {
-            setDiceValue("Descargas una caja de galletas azules 🍪");
+            setDiceValue({ numValue: 1, playValue: "Descargas una caja de galletas azules 🍪" });
         }
         else if (diceRoll === 2) {
-            setDiceValue("Descargas un huevo de rana (con mucho cuidado) 🥚");
+            setDiceValue({ numValue: 2, playValue: "Descargas un huevo de rana (con mucho cuidado) 🥚" });
         }
         else if (diceRoll === 3) {
-            setDiceValue("Descargas una rana 🐸");
+            setDiceValue({ numValue: 3, playValue: "Descargas una rana 🐸" });
         }
         else {
-            setDiceValue("Grogu se mueve una casilla 👣");
+            setDiceValue({ numValue: 4, playValue: "Grogu se mueve una casilla 👣" });
         }
     }
     const rollTheDice = (max, min) => {
@@ -28,7 +31,7 @@ const Dice = () => {
 
     return (
         <section className={styles.dice_section}>
-            <p className={styles.play_move}>{diceValue}</p>
+            <p className={styles.play_move}>{diceValue.playValue}</p>
             <button className={styles.button} onClick={handleDice}>Lanzar el dado</button>
         </section>
     )
