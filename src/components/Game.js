@@ -3,9 +3,45 @@ import Main from "./Main";
 
 import styles from '../styles/game/Game.module.scss';
 
+import { useState } from "react";
+
 const Game = () => {
-    const handleDiceValue = (diceValue) => {
-        console.log(diceValue);
+    const [diceValue, setDiceValue] = useState({
+        numValue: "",
+        playValue: ""
+    });
+    const [cookies, setCookies] = useState(0);
+    const [eggs, setEggs] = useState(0);
+    const [frogs, setFrogs] = useState(0);
+    const [grogu, setGrogu] = useState(0);
+
+
+    const handleDiceValue = (diceRoll) => {
+        console.log(diceRoll);
+        if (diceRoll === 1) {
+            setDiceValue({ numValue: 1, playValue: "Descargas una caja de galletas azules 🍪" });
+            if (cookies < 3) {
+                setCookies(cookies + 1);
+            }
+        }
+        else if (diceRoll === 2) {
+            setDiceValue({ numValue: 2, playValue: "Descargas un huevo de rana (con mucho cuidado) 🥚" });
+            if (eggs < 3) {
+                setEggs(eggs + 1);
+            }
+        }
+        else if (diceRoll === 3) {
+            setDiceValue({ numValue: 3, playValue: "Descargas una rana 🐸" });
+            if (frogs < 3) {
+                setFrogs(frogs + 1);
+            }
+        }
+        else {
+            setDiceValue({ numValue: 4, playValue: "Grogu se mueve una casilla 👣" });
+            if (grogu < 3) {
+                setGrogu(grogu + 1);
+            }
+        }
     }
     return (
         <Main>
@@ -32,7 +68,7 @@ const Game = () => {
                     </div>
                 </div>
             </section>
-            <Dice handleDiceValue={handleDiceValue} />
+            <Dice handleDiceValue={handleDiceValue} diceValue={diceValue} />
         </Main>
     )
 }
