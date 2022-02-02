@@ -5,6 +5,7 @@ import styles from '../styles/game/Game.module.scss';
 
 import { useState } from "react";
 import LoadingZone from "./game/LoadingZone";
+import FinalScreen from "./game/FinalScreen";
 
 const Game = () => {
     const [diceValue, setDiceValue] = useState({
@@ -64,7 +65,7 @@ const Game = () => {
     return (
         <Main>
             {gameStatus.won ? <p>Has ganado</p> : gameStatus.lost ? <p>Has perdido</p> : null}
-
+            <FinalScreen gameStatus={gameStatus} />
             <div>
                 Juego
             </div>
