@@ -3,17 +3,17 @@ import Main from "./Main";
 const Pieces = () => {
     return (
         <Main>
-            <div>
-                Fichas
-                ficha de zona de carga (x6)
-                ficha de armario (x1)
-                ficha de recipiente (x3)
-                cajas de galletas (x3)
-                ranas (x3)
-                huevos de rana (x3)
-                dado (x1)
-                grogu (x1)
-            </div>
+            <h2>Fichas</h2>
+            <ul>
+                <li>ficha de zona de carga (x6)</li>
+                <li>ficha de armario (x1)</li>
+                <li>ficha de recipiente (x3)</li>
+                <li>cajas de galletas (x3)</li>
+                <li>ranas (x3)</li>
+                <li>huevos de rana (x3)</li>
+                <li>dado (x1)</li>
+                <li>grogu (x1)</li>
+            </ul>
         </Main>
 
     )
