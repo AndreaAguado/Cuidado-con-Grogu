@@ -4,7 +4,7 @@ const LoadingZone = (props) => {
 
     const Box = (props) => {
         return (
-            <div className={props.classname}>[]</div>
+            <div className={props.classname}></div>
         )
     }
 

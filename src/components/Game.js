@@ -66,7 +66,7 @@ const Game = () => {
             <div>
                 Juego
             </div>
-            <section>
+            <section className={styles.spaceship_section}>
                 <div>Grogu</div>
                 <LoadingZone grogu={grogu} />
                 <div className={styles.merch_cupboard}>

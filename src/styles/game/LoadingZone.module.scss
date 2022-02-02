@@ -4,9 +4,14 @@
 }
 
 .regular_box {
+  @include box();
   background-color: gray;
 }
 
 .current_box {
+  @include box();
   background-color: yellow;
+  background-image: url("https://senpatch.com/wp-content/uploads/2021/01/GROGU-750x712.png");
+  background-size: cover;
+  background-position: center;
 }

@@ -36,3 +36,9 @@
   @include merch_item();
   grid-area: box3;
 }
+
+.spaceship_section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
