@@ -1,0 +1,12 @@
+@mixin box {
+  width: 100px;
+  height: 100px;
+}
+
+.regular_box {
+  background-color: gray;
+}
+
+.current_box {
+  background-color: yellow;
+}

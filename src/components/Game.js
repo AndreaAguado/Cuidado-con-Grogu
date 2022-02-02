@@ -4,6 +4,7 @@ import Main from "./Main";
 import styles from '../styles/game/Game.module.scss';
 
 import { useState } from "react";
+import LoadingZone from "./game/LoadingZone";
 
 const Game = () => {
     const [diceValue, setDiceValue] = useState({
@@ -67,12 +68,7 @@ const Game = () => {
             </div>
             <section>
                 <div>Grogu</div>
-                <div>[]</div>
-                <div>[]</div>
-                <div>[]</div>
-                <div>[]</div>
-                <div>[]</div>
-                <div>[]</div>
+                <LoadingZone grogu={grogu} />
                 <div className={styles.merch_cupboard}>
                     <div className={styles.merch_item1}>
                         Caja de galletas x {3 - cookies}
