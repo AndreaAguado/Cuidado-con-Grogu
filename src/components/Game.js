@@ -14,7 +14,10 @@ const Game = () => {
     const [eggs, setEggs] = useState(0);
     const [frogs, setFrogs] = useState(0);
     const [grogu, setGrogu] = useState(0);
-
+    const [gameStatus, setGameStatus] = useState({
+        won: false,
+        lost: false
+    })
 
     const handleDiceValue = (diceRoll) => {
         console.log(diceRoll);
@@ -38,13 +41,27 @@ const Game = () => {
         }
         else {
             setDiceValue({ numValue: 4, playValue: "Grogu se mueve una casilla 👣" });
-            if (grogu < 3) {
+            if (grogu < 6) {
                 setGrogu(grogu + 1);
             }
         }
+        hasWon();
     }
+
+    const hasWon = () => {
+        if (cookies === 3 && frogs === 3 && eggs === 3) {
+            setGameStatus({ won: true, lost: false });
+        }
+        else if (grogu === 6) {
+            setGameStatus({ won: false, lost: true });
+        }
+    }
+
+
     return (
         <Main>
+            {gameStatus.won ? <p>Has ganado</p> : gameStatus.lost ? <p>Has perdido</p> : null}
+
             <div>
                 Juego
             </div>
@@ -58,13 +75,13 @@ const Game = () => {
                 <div>[]</div>
                 <div className={styles.merch_cupboard}>
                     <div className={styles.merch_item1}>
-                        Caja de galletas x 3
+                        Caja de galletas x {3 - cookies}
                     </div>
                     <div className={styles.merch_item2}>
-                        Rana x 3
+                        Rana x {3 - frogs}
                     </div>
                     <div className={styles.merch_item3}>
-                        Huevo de rana x 3
+                        Huevo de rana x {3 - eggs}
                     </div>
                 </div>
             </section>
