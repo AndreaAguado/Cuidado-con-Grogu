@@ -64,8 +64,7 @@ const Game = () => {
 
     return (
         <Main>
-            {gameStatus.won ? <p>Has ganado</p> : gameStatus.lost ? <p>Has perdido</p> : null}
-            <FinalScreen gameStatus={gameStatus} />
+            {gameStatus.won ? <FinalScreen gameStatus={gameStatus} /> : gameStatus.lost ? <FinalScreen gameStatus={gameStatus} /> : null}
             <div>
                 Juego
             </div>
