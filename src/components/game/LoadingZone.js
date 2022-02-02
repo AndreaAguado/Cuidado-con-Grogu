@@ -12,7 +12,7 @@ const LoadingZone = (props) => {
         <>
             {
                 Array.from(Array(6)).map((_, i) => (
-                    props.grogu === i ? <Box key={i} classname={styles.current_box} /> : <Box key={i} classname={styles.regular_box} />
+                    props.groguPosition === i ? <Box key={i} classname={styles.current_box} /> : <Box key={i} classname={styles.regular_box} />
                 ))
             }
         </>

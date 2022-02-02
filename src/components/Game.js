@@ -15,6 +15,7 @@ const Game = () => {
     const [eggs, setEggs] = useState(0);
     const [frogs, setFrogs] = useState(0);
     const [grogu, setGrogu] = useState(0);
+    const [groguPosition, setGroguPosition] = useState(-1);
     const [gameStatus, setGameStatus] = useState({
         won: false,
         lost: false
@@ -42,8 +43,9 @@ const Game = () => {
         }
         else {
             setDiceValue({ numValue: 4, playValue: "Grogu se mueve una casilla 👣" });
-            if (grogu < 6) {
+            if (grogu < 7) {
                 setGrogu(grogu + 1);
+                setGroguPosition(groguPosition + 1);
             }
         }
         hasWon();
@@ -53,7 +55,7 @@ const Game = () => {
         if (cookies === 3 && frogs === 3 && eggs === 3) {
             setGameStatus({ won: true, lost: false });
         }
-        else if (grogu === 6) {
+        else if (grogu === 7) {
             setGameStatus({ won: false, lost: true });
         }
     }
@@ -68,7 +70,7 @@ const Game = () => {
             </div>
             <section className={styles.spaceship_section}>
                 <div>Grogu</div>
-                <LoadingZone grogu={grogu} />
+                <LoadingZone grogu={grogu} groguPosition={groguPosition} />
                 <div className={styles.merch_cupboard}>
                     <div className={styles.merch_item1}>
                         Caja de galletas x {3 - cookies}
