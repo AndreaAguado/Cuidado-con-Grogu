@@ -1,3 +1,18 @@
+.section {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  background-color: papayawhip;
+  padding: 6px 10px;
+  border-radius: 12px;
+  border: solid 4px black;
+  font-size: 2rem;
+}
 .merch_cupboard {
   width: 200px;
   height: 300px;
