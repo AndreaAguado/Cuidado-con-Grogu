@@ -3,7 +3,7 @@
   line-height: 1.4rem;
   margin-bottom: 20px;
 }
-p {
+.paragraph {
   @include text();
   text-align: justify;
 }
@@ -12,4 +12,10 @@ p {
   list-style: circle inside;
   line-height: 1.5rem;
   margin-left: 20px;
+}
+.container {
+  width: 80%;
+  @media all and (max-width: 500px) {
+    width: 100%;
+  }
 }
