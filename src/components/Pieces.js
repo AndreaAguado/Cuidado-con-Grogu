@@ -7,14 +7,14 @@ const Pieces = () => {
         <Main>
             <h2>Fichas</h2>
             <ul className={styles.list}>
-                <li>ficha de zona de carga (x6)</li>
-                <li>ficha de armario (x1)</li>
-                <li>ficha de recipiente (x3)</li>
-                <li>cajas de galletas (x3)</li>
-                <li>ranas (x3)</li>
-                <li>huevos de rana (x3)</li>
-                <li>dado (x1)</li>
-                <li>grogu (x1)</li>
+                <li>Ficha de zona de carga (x6)</li>
+                <li>Ficha de armario (x1)</li>
+                <li>Ficha de recipiente (x3)</li>
+                <li>Cajas de galletas (x3)</li>
+                <li>Ranas (x3)</li>
+                <li>Huevos de rana (x3)</li>
+                <li>Dado (x1)</li>
+                <li>Grogu (x1)</li>
             </ul>
         </Main>
 
