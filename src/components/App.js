@@ -6,6 +6,7 @@ import Rules from './Rules';
 import { Routes, Route } from 'react-router-dom';
 import Intro from './Intro';
 import Header from './Header';
+import Footer from './Footer';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/game" element={<Game />} />
         <Route path="/pieces" element={<Pieces />} />
       </Routes>
+      <Footer />
     </div>
   );
 }

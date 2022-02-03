@@ -1,0 +1,24 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  height: 8vh;
+  font-size: 1rem;
+}
+.links_list {
+  display: flex;
+  gap: 20px;
+}
+.link {
+  color: orangered;
+  font-size: 1.1rem;
+  &:hover {
+    color: orange;
+    filter: drop-shadow(1px 1px 1px black);
+  }
+}
+.small {
+  font-family: monospace;
+}
