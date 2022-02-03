@@ -12,6 +12,11 @@
   border-radius: 12px;
   border: solid 4px black;
   font-size: 2rem;
+  &:hover {
+    color: orangered;
+    border-color: orangered;
+    filter: drop-shadow(2px 2px 1px black);
+  }
 }
 .merch_cupboard {
   width: 200px;
