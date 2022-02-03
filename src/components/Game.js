@@ -69,7 +69,9 @@ const Game = () => {
                 Juego
             </div>
             <section className={styles.spaceship_section}>
-                <div>Grogu</div>
+                <div className={styles.grogu}>
+                    <img className={grogu === 0 ? styles.grogu_img : styles.hidden} src="https://senpatch.com/wp-content/uploads/2021/01/GROGU-750x712.png" alt="Imagen de Grogu" />
+                </div>
                 <LoadingZone grogu={grogu} groguPosition={groguPosition} />
                 <div className={styles.merch_cupboard}>
                     <div className={styles.merch_item1}>
