@@ -5,7 +5,6 @@ import styles from '../styles/layout/pages.module.scss';
 const Rules = () => {
     return (
         <Main>
-            <h2>Reglas del juego</h2>
             <section className={styles.container}>
                 <p className={styles.paragraph}>
                     El juego es muy sencillo. Dispondremos de 6 casillas que representan un camino en la zona de carga de la Razor Crest que lleva hasta el armario donde se encuentra segura la mercancía. De este modo tendremos 7 casillas, 6 del camino y una que representa al armario: <span aria-label="emojis representando las casillas" title="emojis de casillas">🔲🔲🔲🔲🔲🔲❎</span>

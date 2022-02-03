@@ -74,9 +74,6 @@ const Game = () => {
     return (
         <Main>
             {gameStatus.won ? <FinalScreen gameStatus={gameStatus} /> : gameStatus.lost ? <FinalScreen gameStatus={gameStatus} /> : null}
-            {/* <div>
-                Juego
-            </div> */}
             {isPlaying ?
                 <>
                     <section className={styles.spaceship_section}>

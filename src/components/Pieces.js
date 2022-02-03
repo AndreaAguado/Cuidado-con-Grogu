@@ -5,7 +5,6 @@ import styles from '../styles/layout/pages.module.scss';
 const Pieces = () => {
     return (
         <Main>
-            <h2>Fichas</h2>
             <ul className={styles.list}>
                 <li>Ficha de zona de carga (x6)</li>
                 <li>Ficha de armario (x1)</li>

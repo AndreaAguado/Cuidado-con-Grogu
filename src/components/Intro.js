@@ -5,7 +5,6 @@ import styles from '../styles/layout/pages.module.scss';
 const Intro = () => {
     return (
         <Main>
-            <h2>¡Cuidado con Grogu!</h2>
             <section className={styles.container}>
                 <p className={styles.paragraph} >
                     El cazarrecompensas mandaloriano Din Djarin, conocido como «el Mandaloriano» o simplemente «mando», está a cargo de Grogu mientras viaja por la galaxia realizando todo tipo de encargos. En esta ocasión el encargo es muy especial. Debe entregar
