@@ -23,10 +23,6 @@ const Game = () => {
     })
     const [isPlaying, setIsPlaying] = useState(false);
 
-    // const handleIsPlaying = (isPlayingValue) => {
-    //     setIsPlaying(isPlayingValue);
-    // }
-
     const handleButton = () => {
         setIsPlaying(true);
     }
