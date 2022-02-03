@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import styles from '../styles/layout/Header.module.scss';
 const Header = () => {
     return (
@@ -7,13 +7,15 @@ const Header = () => {
             <nav className={styles.header_nav}>
                 <ul className={styles.link_list}>
                     <li>
-                        <Link to="/rules">Reglas del juego</Link>
+                        <NavLink className={(navData) => { return (navData.isActive ? styles.active_link : styles.link) }} to="/rules">
+                            Reglas del juego
+                        </NavLink>
                     </li>
                     <li>
-                        <Link to="/pieces">Fichas</Link>
+                        <NavLink className={(navData) => { return (navData.isActive ? styles.active_link : styles.link) }} to="/pieces">Fichas</NavLink>
                     </li>
                     <li>
-                        <Link to="/game">Juego</Link>
+                        <NavLink className={(navData) => { return (navData.isActive ? styles.active_link : styles.link) }} to="/game">Juego</NavLink>
                     </li>
                 </ul>
             </nav>
