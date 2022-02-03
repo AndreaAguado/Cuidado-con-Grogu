@@ -16,11 +16,19 @@
   width: 100%;
 }
 
-.link {
+@mixin links {
+  font-size: 1.5rem;
   color: orangered;
+  &:hover {
+    color: orange;
+  }
+}
+
+.link {
+  @include links();
 }
 
 .active_link {
-  color: orangered;
+  @include links();
   text-decoration: underline 2px orangered;
 }
