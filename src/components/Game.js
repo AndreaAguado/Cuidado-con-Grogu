@@ -79,13 +79,13 @@ const Game = () => {
                         <LoadingZone grogu={grogu} groguPosition={groguPosition} />
                         <div className={styles.merch_cupboard}>
                             <div className={styles.merch_item1}>
-                                Caja de galletas x {3 - cookies}
+                                Caja de galletas <span>x {3 - cookies}</span>
                             </div>
                             <div className={styles.merch_item2}>
-                                Rana x {3 - frogs}
+                                Rana <span>x {3 - frogs}</span>
                             </div>
                             <div className={styles.merch_item3}>
-                                Huevo de rana x {3 - eggs}
+                                Huevo de rana <span>x {3 - eggs}</span>
                             </div>
                         </div>
                     </section>
