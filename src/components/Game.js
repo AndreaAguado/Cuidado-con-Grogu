@@ -79,13 +79,13 @@ const Game = () => {
                         <LoadingZone grogu={grogu} groguPosition={groguPosition} />
                         <div className={styles.merch_cupboard}>
                             <div className={styles.merch_item1}>
-                                Caja de galletas <span>x {3 - cookies}</span>
+                                <span aria-label="emoji de galleta" title="emoji de galleta" className={styles.icon}>🍪</span> <span>x {3 - cookies}</span>
                             </div>
                             <div className={styles.merch_item2}>
-                                Rana <span>x {3 - frogs}</span>
+                                <span aria-label="emoji de rana" title="emoji de rana" className={styles.icon}>🐸</span>  <span>x {3 - frogs}</span>
                             </div>
                             <div className={styles.merch_item3}>
-                                Huevo de rana <span>x {3 - eggs}</span>
+                                <span aria-label="emoji de huevo" title="emoji de huevo" className={styles.icon}>🥚</span><span>x {3 - eggs}</span>
                             </div>
                         </div>
                     </section>
