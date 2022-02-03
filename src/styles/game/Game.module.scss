@@ -32,6 +32,9 @@
     "box2"
     "box3";
   gap: 10px;
+  @media all and (max-width: 500px) {
+    width: 30%;
+  }
 }
 
 @mixin merch_item {
@@ -44,6 +47,9 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  @media all and (max-width: 500px) {
+    text-align: center;
+  }
 }
 .merch_item1 {
   @include merch_item();
@@ -63,6 +69,9 @@
   justify-content: space-around;
   align-items: center;
   width: 100%;
+  @media all and (max-width: 768px) {
+    gap: 5px;
+  }
 }
 
 .grogu {
