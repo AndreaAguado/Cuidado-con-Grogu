@@ -1,10 +1,12 @@
 import Main from "./Main";
 
+import styles from '../styles/layout/pages.module.scss';
+
 const Pieces = () => {
     return (
         <Main>
             <h2>Fichas</h2>
-            <ul>
+            <ul className={styles.list}>
                 <li>ficha de zona de carga (x6)</li>
                 <li>ficha de armario (x1)</li>
                 <li>ficha de recipiente (x3)</li>

@@ -1,0 +1,15 @@
+@mixin text {
+  font-size: 1.1rem;
+  line-height: 1.4rem;
+  margin-bottom: 20px;
+}
+p {
+  @include text();
+  text-align: justify;
+}
+.list {
+  @include text();
+  list-style: circle inside;
+  line-height: 1.5rem;
+  margin-left: 20px;
+}
