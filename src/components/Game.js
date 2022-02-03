@@ -28,7 +28,6 @@ const Game = () => {
     }
 
     const handleDiceValue = (diceRoll) => {
-        console.log(diceRoll);
         if (diceRoll === 1) {
             setDiceValue({ numValue: 1, playValue: "Descargas una caja de galletas azules 🍪" });
             if (cookies < 3) {
