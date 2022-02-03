@@ -18,4 +18,9 @@
   border: solid 2px black;
   border-radius: 10px;
   cursor: pointer;
+  &:hover {
+    color: orangered;
+    border-color: orangered;
+    filter: drop-shadow(2px 2px 1px black);
+  }
 }
