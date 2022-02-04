@@ -35,7 +35,7 @@
     "box3";
   gap: 10px;
   @media all and (max-width: 500px) {
-    width: 30%;
+    width: 20%;
   }
 }
 
@@ -81,6 +81,9 @@
 
 .grogu {
   width: 10%;
+  @media all and (max-width: 500px) {
+    width: 8%;
+  }
 }
 
 .grogu_img {
