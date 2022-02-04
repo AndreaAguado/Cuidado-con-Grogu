@@ -22,6 +22,7 @@ const Game = () => {
         lost: false
     })
     const [isPlaying, setIsPlaying] = useState(false);
+    const [hasFinished, setHasFinished] = useState(false);
 
     const handleButton = () => {
         setIsPlaying(true);
@@ -75,9 +76,11 @@ const Game = () => {
     const hasWon = () => {
         if (cookies === 3 && frogs === 3 && eggs === 3) {
             setGameStatus({ won: true, lost: false });
+            setHasFinished(true);
         }
         else if (grogu === 7) {
             setGameStatus({ won: false, lost: true });
+            setHasFinished(true);
         }
     }
 
@@ -104,7 +107,8 @@ const Game = () => {
                             </div>
                         </div>
                     </section>
-                    <Dice handleDiceValue={handleDiceValue} diceValue={diceValue} />
+
+                    <Dice handleDiceValue={handleDiceValue} diceValue={diceValue} hasFinished={hasFinished} />
                 </>
 
                 :
