@@ -1,70 +1,38 @@
-# Getting Started with Create React App
+# Cuidado con Grogu (Beware of Grogu)
+
+This project was created for a technical test. It consists of a _The Mandalorian_ inspired game in which the user has a mission to accomplish by unloading a ship before Grogu has had the chance to eat the merchandising.
+
+To see the final result please visit [my github pages](https://andreaaguado.github.io/Cuidado-con-Grogu/) 🤗
+
+## Page
+
+| Start a game                                                                                                                    | Game                                                                                                                 | Game                                                                                                                 | Final Screen                                                                                                                       |
+| ------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
+| <img src="./src/images/readme1.png" alt="Preview /game"  position="left" style="margin-right: 10px; width: 450px" />            | <img src="./src/images/readme2.png" alt="Preview /game"  position="left" style="margin-right: 10px; width: 450px" /> | <img src="./src/images/readme3.png" alt="Preview /game"  position="left" style="margin-right: 10px; width: 450px" /> | <img src="./src/images/readme4.png" alt="Preview /game"  position="left" style="margin-right: 10px; width: 450px" />               |
+| Under the /game path the user is redirected to this page. To start playing they have to click the button located in the center. | Once the user has clicked the button they'll start a new game. They game has been modeled responsively.              | To play they just have to click the dice button until either they or Grogu win.                                      | The user will be notified of the result in the final screen where they can choose to play again clicking the button at the bottom. |
+
+### This repository is conformed by:
+
+- The files that are loose in the repository root, such as _package.json_ are used in the configuration of the project.
+- The `src/` folder: are the files of the web page such as **HTML, SCSS, and the React Components and Services...**
+- The `public/` and `docs/` folders.
+
+## Quick Start Guide
+
+> **NOTE:** You need to have [Node JS](https://nodejs.org/) installed to work with this page:
+
+### Steps to follow to use this project in your own computer:
+
+### Install the local dependencies by running in the terminal the command:
+
+```bash
+npm install
+```
+
+### To start the project run the command:
+
+```bash
+npm start
+```
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
