@@ -15,13 +15,35 @@
     .modal__content {
       padding: 1rem;
       border-radius: 0.5rem;
-      border: solid 5px $color8;
+      border: solid 5px $modal_secondary_color;
       box-shadow: 0 0 7px 7px rgba(55, 255, 20, 0.521);
-      background-color: $color6;
+      background-color: $modal_primary_color;
       width: 60%;
       @media all and (max-width: 1200px) {
         width: 80%;
       }
     }
   }
+}
+.header {
+  display: flex;
+  justify-content: flex-end;
+}
+.close_button {
+  font-size: 2rem;
+  display: flex;
+  padding: 3px;
+  border-radius: 50%;
+  border: solid 3px $modal_secondary_color;
+  color: $modal_secondary_color;
+  font-weight: bold;
+  &:hover {
+    background-color: $modal_secondary_color;
+    color: $modal_primary_color;
+    transition: background-color ease 0.5s;
+  }
+}
+
+.hidden {
+  display: none;
 }
