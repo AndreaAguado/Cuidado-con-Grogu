@@ -11,7 +11,8 @@
 .current_box {
   @include box();
   background-color: yellow;
-  background-image: url("https://senpatch.com/wp-content/uploads/2021/01/GROGU-750x712.png");
-  background-size: cover;
+  background-image: url("../../images/grogu.png");
+  background-size: contain;
+  background-repeat: no-repeat;
   background-position: center;
 }

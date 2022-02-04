@@ -1,6 +1,6 @@
 import Dice from "./game/Dice";
 import Main from "./Main";
-
+import groguImage from "../images/grogu.png";
 import styles from '../styles/game/Game.module.scss';
 
 import { useState } from "react";
@@ -73,7 +73,7 @@ const Game = () => {
                 <>
                     <section className={styles.spaceship_section}>
                         <div className={styles.grogu}>
-                            <img className={grogu === 0 ? styles.grogu_img : styles.hidden} src="https://senpatch.com/wp-content/uploads/2021/01/GROGU-750x712.png" alt="Imagen de Grogu" />
+                            <img className={grogu === 0 ? styles.grogu_img : styles.hidden} src={groguImage} alt="Imagen de Grogu" />
                         </div>
                         <LoadingZone grogu={grogu} groguPosition={groguPosition} />
                         <div className={styles.merch_cupboard}>
