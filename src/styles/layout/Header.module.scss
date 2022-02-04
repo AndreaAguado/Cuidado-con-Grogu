@@ -7,6 +7,8 @@
   justify-content: space-evenly;
   align-items: center;
   font-family: $title_font;
+  background-color: $secondary_bg_color;
+  color: $secondary_text_color;
 }
 .link_list {
   display: flex;
@@ -21,9 +23,9 @@
 
 @mixin links {
   font-size: 1.5rem;
-  color: orangered;
+  color: $links_color;
   &:hover {
-    color: orange;
+    color: $links_hover_color;
   }
 }
 
@@ -33,5 +35,5 @@
 
 .active_link {
   @include links();
-  text-decoration: underline 2px orangered;
+  text-decoration: underline 2px $links_color;
 }
