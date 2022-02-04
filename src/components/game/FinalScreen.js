@@ -12,7 +12,7 @@ const FinalScreen = (props) => {
                     alt={props.gameStatus.won ? "Gif de Grogu comiendo galletas azules" : "Imagen de Grogu y Mando"} />
                 <h3 className={styles.message}>{props.gameStatus.won ? "Mando completa la misión" : "¡Grogu se lo ha comido todo!"}</h3>
                 <div>
-                    <button onClick={props.reset}> Jugar de nuevo</button>
+                    <button onClick={props.reset} className={styles.button}> Jugar de nuevo</button>
                 </div>
             </article>
         </ModalWindow >
