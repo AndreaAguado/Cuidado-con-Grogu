@@ -1,6 +1,7 @@
 @mixin box {
   width: 10%;
   height: 100px;
+  border-radius: 4px;
   @media all and (max-width: 500px) {
     width: 12%;
   }
