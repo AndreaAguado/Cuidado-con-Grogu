@@ -27,6 +27,8 @@
   border-radius: 5px;
   border: solid 4px $modal_secondary_color;
   font-family: $title_font;
+  background-color: $button_primary_color;
+  color: $modal_secondary_color;
   &:hover {
     filter: drop-shadow(2px 2px 1px black);
   }

@@ -28,13 +28,15 @@
 .button {
   padding: 3px 8px;
   font-size: 1.5rem;
-  border: solid 2px black;
+  border: solid 2px $button_secondary_color;
   border-radius: 10px;
   cursor: pointer;
   font-family: $title_font;
+  color: $button_secondary_color;
+  background-color: $button_primary_color;
   &:hover {
-    color: orangered;
-    border-color: orangered;
+    color: $button_hover_color;
+    border-color: $button_hover_color;
     filter: drop-shadow(2px 2px 1px black);
   }
 }
