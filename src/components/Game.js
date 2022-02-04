@@ -42,6 +42,7 @@ const Game = () => {
             won: false,
             lost: false
         })
+        setHasFinished(false);
     }
 
     const handleDiceValue = (diceRoll) => {
