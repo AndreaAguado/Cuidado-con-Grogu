@@ -10,3 +10,9 @@ $color7: #776037;
 $color8: #272c18;
 $color9: #a4c4a4;
 $color10: #c83444;
+
+// fonts:
+@font-face {
+  font-family: "mandalore";
+  src: url("../fonts/mandalore.ttf") format("truetype");
+}

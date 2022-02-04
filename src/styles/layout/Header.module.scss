@@ -1,9 +1,12 @@
+@import "../core/variables.scss";
+
 .header {
   height: 12vh;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  font-family: "mandalore", sans-serif;
 }
 .link_list {
   display: flex;
