@@ -27,6 +27,22 @@ const Game = () => {
         setIsPlaying(true);
     }
 
+    const reset = () => {
+        setDiceValue({
+            numValue: "",
+            playValue: ""
+        });
+        setCookies(0);
+        setEggs(0);
+        setFrogs(0);
+        setGrogu(0);
+        setGroguPosition(-1);
+        setGameStatus({
+            won: false,
+            lost: false
+        })
+    }
+
     const handleDiceValue = (diceRoll) => {
         if (diceRoll === 1) {
             setDiceValue({ numValue: 1, playValue: "Descargas una caja de galletas azules 🍪" });
@@ -68,7 +84,7 @@ const Game = () => {
 
     return (
         <Main>
-            {gameStatus.won ? <FinalScreen gameStatus={gameStatus} /> : gameStatus.lost ? <FinalScreen gameStatus={gameStatus} /> : null}
+            {gameStatus.won ? <FinalScreen gameStatus={gameStatus} reset={reset} /> : gameStatus.lost ? <FinalScreen gameStatus={gameStatus} reset={reset} /> : null}
             {isPlaying ?
                 <>
                     <section className={styles.spaceship_section}>
