@@ -1,3 +1,4 @@
+@import "../core/variables.scss";
 .section {
   height: 73vh;
   display: flex;
@@ -13,7 +14,7 @@
   border: solid 4px black;
   font-size: 2rem;
   cursor: pointer;
-  font-family: "mandalore", sans-serif;
+  font-family: $title_font;
   &:hover {
     color: orangered;
     border-color: orangered;
