@@ -1,1 +1,8 @@
 @import "./core/reset.scss";
+@import "./core/variables.scss";
+
+body {
+  height: 100%;
+  background-color: $page_bg_color;
+  color: $text_color;
+}
