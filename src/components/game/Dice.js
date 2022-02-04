@@ -13,7 +13,7 @@ const Dice = (props) => {
 
     return (
         <section className={styles.dice_section}>
-            <p className={styles.play_move}>{props.diceValue.playValue}</p>
+            <p key={Math.random()} className={styles.play_move}>{props.diceValue.playValue}</p>
             <button className={styles.button} onClick={handleDice}>Lanzar el dado</button>
         </section>
     )
